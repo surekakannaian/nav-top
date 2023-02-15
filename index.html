@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive-top</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">LOGO</div>
+        <nav class="nav">
+            <a href="#" >HOME1</a>
+            <a href="#">HOME1</a>
+            <a href="#">HOME1</a>
+        </nav>
+        <div class="menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    <script>
+        var bar = document.querySelector('.menu i');
+        var nav=document.querySelector('.nav');
+        bar.addEventListener('click',myfuncion);
+        function myfuncion(){
+            bar.classList.toggle('fa-times');
+            nav.classList.toggle('nav-active');
+        }
+    </script>
+</body>
+</html>
